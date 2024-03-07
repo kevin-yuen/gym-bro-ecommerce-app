@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+// importing in case need to add custom values into existing sass variables
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+$darknavyblue: #082c54;
+$darkpurple: #3E0957;
+$antiquewhite: #f8faf9;
+
+// set up base font family
+$font-family-base: "Raleway", sans-serif;
+
+// create own custom class
+$utilities: (
+    "custom-font-family": (
+        property: font-family,
+        class: custom-font-family,
+        values: (
+            "teko": Teko
+        )
+    ),
+  "custom-color": (
+    property: color,
+    class: custom-color,
+    values: (
+      "darknavyblue": $darknavyblue,
+      "darkpurple": $darkpurple
+    ),
+  ),
+  "custom-background-color": (
+    property: background-color,
+    class: custom-background-color,
+    values: (
+      "antiquewhite": $antiquewhite,
+    ),
+  ),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
