@@ -9,6 +9,29 @@ $darknavyblue: #082c54;
 $darkpurple: #3E0957;
 $antiquewhite: #f8faf9;
 
+// $custom-position-values: (
+//     5: 5%,
+//     10: 10%,
+//     15: 15%,
+//     20: 20%,
+//     25: 25%,
+//     30: 30%,
+//     35: 35%,
+//     40: 40%,
+//     45: 45%,
+//     55: 55%,
+//     60: 60%,
+//     65: 65%,
+//     70: 70%,
+//     75: 75%,
+//     80: 80%,
+//     85: 85%,
+//     90: 90%,
+//     95: 95%
+// );
+
+// $position-values: map-merge($position-values, $custom-position-values);
+
 // set up base font family
 $font-family-base: "Raleway", sans-serif;
 
@@ -26,16 +49,56 @@ $utilities: (
     class: custom-color,
     values: (
       "darknavyblue": $darknavyblue,
-      "darkpurple": $darkpurple
+      "darkpurple": $darkpurple,
+      "antiquewhite": $antiquewhite,
     ),
   ),
   "custom-background-color": (
     property: background-color,
     class: custom-background-color,
     values: (
+      "darknavyblue": $darknavyblue,
+      "darkpurple": $darkpurple,
       "antiquewhite": $antiquewhite,
     ),
   ),
+  "custom-width": (
+    property: width,
+    class: custom-width,
+    responsive: true,
+    values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        35: 35%,
+        40: 40%,
+        60: 60%,
+        70: 70%,
+        80: 80%,
+        90: 90%,
+        92: 92%,
+        93: 93%,
+        95: 95%
+    )
+  ),
+  "custom-height": (
+    property: height,
+    class: custom-height,
+    responsive: true,
+    values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        30: 30%,
+        40: 40%,
+        60: 60%,
+        70: 70%,
+        80: 80%,
+        90: 90%,
+    )
+  )
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
