@@ -1,9 +1,10 @@
 :root {
     --darkpurple: #3E0957;
     --antiquewhite: #f8faf9;
+    --brightorange: #F3AF05;
 }
 
-input[type="text"]:focus {
+input[type]:focus {
     border-color: var(--darkpurple);
     box-shadow: 0px 0px;
 }
@@ -21,6 +22,14 @@ input[type="text"]:focus {
     background-color: var(--antiquewhite) !important;
     padding: 3px;
     border-radius: 2px;
+}
+
+.oncanvas-nav-link.active {
+    color: var(--brightorange) !important;
+}
+
+.footer-fs {
+    font-size: 12px;
 }
 
 @media screen and (max-width: 745px){
