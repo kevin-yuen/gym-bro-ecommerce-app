@@ -53,7 +53,7 @@ export default function OffcanvasPanelComponent() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/all-products" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasAllProductsImage}
                   imageLabel={"all-products"}

@@ -4,16 +4,13 @@ import { NavLink } from "react-router-dom";
 // components
 import BrandComponent from "../components/common/BrandComponent";
 import AuthButtonComponent from "../components/common/AuthButtonComponent";
-import FooterComponent from "../components/common/FooterComponent";
+import TrademarkComponent from "../components/common/TrademarkComponent";
 
 export default function CreateAccount() {
   return (
     <div className="container text-center ps-sm-7 pe-sm-7 ps-xl-15 pe-xl-15">
       <h1 className="fs-2 custom-font-family-teko custom-color-darkpurple">
-        <BrandComponent
-          customWidth={10}
-          customHeight={10}
-        />
+        <BrandComponent customWidth={10} customHeight={10} />
       </h1>
       <div className="border border-secondary-subtle border-1 rounded-2 text-start pt-3 pb-3">
         <h2 className="ms-5 fw-bolder">Create account</h2>
@@ -47,7 +44,10 @@ export default function CreateAccount() {
             />
           </div>
           <div className="ps-5 pe-5 mt-2">
-            <label htmlFor="re-enter password" className="form-label fw-medium fs-13">
+            <label
+              htmlFor="re-enter password"
+              className="form-label fw-medium fs-13"
+            >
               Re-enter password
             </label>
             <input
@@ -67,7 +67,7 @@ export default function CreateAccount() {
           </p>
         </div>
       </div>
-      <FooterComponent />
+      <TrademarkComponent />
     </div>
   );
 }

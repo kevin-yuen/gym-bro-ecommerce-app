@@ -13,6 +13,7 @@ import LogoContextProvider from "./context/LogoContextProvider";
 import RootLayout from "./layouts/RootLayout";
 
 // pages
+import Landing from "./pages/Landing";
 import SignIn from "./pages/SignIn";
 import CreateAccount from "./pages/CreateAccount";
 import ForgotPasword from "./pages/ForgotPassword";
@@ -27,7 +28,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<AllProducts />} />
+        <Route index element={<Landing />}/>
+        <Route path="/all-products" element={<AllProducts />} />
         <Route path="/women-activewear" element={<WomenActivewear />} />
         <Route path="/men-activewear" element={<MenActivewear />} />
         <Route path="/supplements" element={<Supplements />} />

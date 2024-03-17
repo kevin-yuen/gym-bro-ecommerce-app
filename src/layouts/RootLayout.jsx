@@ -2,8 +2,7 @@ import React from "react";
 
 // components
 import BrandComponent from "../components/common/BrandComponent";
-import SearchComponent from "../components/oncanvas-navbar/SearchComponent";
-import AuthCartComponent from "../components/oncanvas-navbar/AuthCartComponent";
+import NavbarFunctionsComponent from "../components/oncanvas-navbar/NavbarFunctionsComponent";
 import OffcanvasPanelComponent from "../components/offcanvas-navbar/OffcanvasPanelComponent";
 import NavLinksComponent from "../components/oncanvas-navbar/NavLinksComponent";
 
@@ -21,8 +20,7 @@ export default function RootLayout() {
               <BrandComponent customWidth={15} customHeight={85} />
             </h1>
           </div>
-          <SearchComponent />
-          <AuthCartComponent />
+          <NavbarFunctionsComponent />
           <OffcanvasPanelComponent />
         </div>
       </nav>
@@ -31,7 +29,7 @@ export default function RootLayout() {
         <NavLinksComponent />
       </div>
 
-      <main>
+      <main className="main">
         {/* This is a placeholder for whatever pages inside .createBrowserRouter() that the user is navigating to */}
         <Outlet />
       </main>

@@ -5,7 +5,7 @@ import { CaretRightFill, CaretDownFill } from "react-bootstrap-icons";
 // components
 import BrandComponent from "../components/common/BrandComponent";
 import AuthButtonComponent from "../components/common/AuthButtonComponent";
-import FooterComponent from "../components/common/FooterComponent";
+import TrademarkComponent from "../components/common/TrademarkComponent";
 
 export default function SignIn() {
   const [showHelp, setShowHelp] = useState(false);
@@ -17,10 +17,7 @@ export default function SignIn() {
   return (
     <div className="container text-center ps-sm-7 pe-sm-7 ps-xl-15 pe-xl-15">
       <h1 className="fs-2 custom-font-family-teko custom-color-darkpurple">
-        <BrandComponent
-          customWidth={10}
-          customHeight={10}
-        />
+        <BrandComponent customWidth={10} customHeight={10} />
       </h1>
       <div className="border border-secondary-subtle border-1 rounded-2 text-start pt-3 pb-3">
         <h2 className="ms-5 fw-bolder">Sign in</h2>
@@ -77,7 +74,7 @@ export default function SignIn() {
           </div>
         </div>
       </div>
-      <FooterComponent />
+      <TrademarkComponent />
     </div>
   );
 }

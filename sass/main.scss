@@ -8,6 +8,9 @@
 $darknavyblue: #082c54;
 $darkpurple: #3E0957;
 $antiquewhite: #f8faf9;
+$lightpurple: #f0e8f4;
+$black: #000000;
+$enable-negative-margins: true;
 
 $custom-position-values: (
     5: 5%,
@@ -44,6 +47,16 @@ $custom-spacers: (
   15: $spacer * 13,
   16: $spacer * 14,
   17: $spacer * 15,
+  18: $spacer * 16,
+  19: $spacer * 17,
+  20: $spacer * 18,
+  21: $spacer * 19,
+  22: $spacer * 20,
+  23: $spacer * 21,
+  24: $spacer * 22,
+  25: $spacer * 23,
+  26: $spacer * 24,
+  27: $spacer * 25,
 );
 $spacers: map-merge($spacers, $custom-spacers);
 
@@ -78,6 +91,7 @@ $utilities: (
       "darknavyblue": $darknavyblue,
       "darkpurple": $darkpurple,
       "antiquewhite": $antiquewhite,
+      "black": $black
     ),
   ),
   "custom-background-color": (
@@ -87,6 +101,7 @@ $utilities: (
       "darknavyblue": $darknavyblue,
       "darkpurple": $darkpurple,
       "antiquewhite": $antiquewhite,
+      "lightpurple": $lightpurple,
     ),
   ),
   "custom-width": (

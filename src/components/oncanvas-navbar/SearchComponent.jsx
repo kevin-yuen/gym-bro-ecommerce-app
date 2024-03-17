@@ -3,10 +3,13 @@ import { Search } from "react-bootstrap-icons";
 
 export default function SearchComponent() {
   return (
-    <div className="search-input-group input-group custom-width-35">
-        <input type="text" className="form-control" placeholder="Search GymBro" aria-label="Search GymBro" aria-describedby="gymbro-search" />
-        <button className="btn btn-outline-secondary" type="button" id="search-gymbro"><Search color="#F3AF05" size={25} /></button>
-    </div>
+    <>
+      <Search className="position-relative start-10" size={25} />
+      <input
+        type="text"
+        className="input-search me-2 pt-2 pb-2 ps-5 pe-4 custom-background-color-lightpurple rounded-2"
+        placeholder="Search GymBro"
+      />
+    </>
   );
 }
-

@@ -4,7 +4,7 @@ export default function ImageLinkComponent({imageSource, imageLabel, imageLinkNa
   return (
     <div className="image-link-group custom-background-color-antiquewhite">
         <img src={imageSource} alt={imageLabel} className="image" width={336} height={150} />
-        <h3 className="text-center text-uppercase fw-bolder custom-color-darkpurple">{imageLinkName}</h3>
+        <h3 className="text-center text-uppercase fw-bolder custom-color-darkpurple custom-font-family-teko">{imageLinkName}</h3>
     </div>
   )
 }
