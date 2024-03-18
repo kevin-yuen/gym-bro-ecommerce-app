@@ -4,6 +4,10 @@
   --brightorange: #f3af05;
 }
 
+body {
+  padding-top: 100px;
+}
+
 input[type="text"],
 input[type="text"]:focus {
   border-color: var(--darkpurple) !important;
@@ -48,24 +52,29 @@ input[type="text"]:focus {
   height: 660px !important;
 }
 
+.sidebar {
+  height: 100vh;
+  width: 270px;
+}
+
+.content-container {
+  width: 100vw;
+}
+
 @media screen and (max-width: 937px) {
   div.navbar-functions,
   .oncanvas-nav-link-group {
     display: none !important;
   }
 
-  .carousel {
-    margin-top: 5px !important;
+  .carousel-inner {
+    margin-top: -57px;
   }
 }
 
 @media screen and (min-width: 937px) {
   button.navbar-toggler {
     display: none !important;
-  }
-
-  .carousel {
-    margin-top: -16px !important;
   }
 }
 

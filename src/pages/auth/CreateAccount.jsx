@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 // components
-import BrandComponent from "../components/common/BrandComponent";
-import AuthButtonComponent from "../components/common/AuthButtonComponent";
-import TrademarkComponent from "../components/common/TrademarkComponent";
+import BrandComponent from "../../components/common/BrandComponent";
+import AuthButtonComponent from "../../components/common/AuthButtonComponent";
+import TrademarkComponent from "../../components/common/TrademarkComponent";
 
 export default function CreateAccount() {
   return (

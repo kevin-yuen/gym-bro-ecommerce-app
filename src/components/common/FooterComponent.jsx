@@ -12,7 +12,8 @@ import FooterLinksComponent from "../landing/FooterLinksComponent";
 
 export default function FooterComponent() {
   return (
-    <footer>
+    <footer className="container-fluid custom-background-color-antiquewhite mt-3">
+      <div className="bottom-0 text-center">
       <div className="row">
         <div className="col-4">
           <h4 className="pt-3 pb-2 fs-6 fw-bolder">HELP</h4>
@@ -58,6 +59,7 @@ export default function FooterComponent() {
         </div>
       </div>
       <TrademarkComponent />
+      </div>
     </footer>
   );
 }

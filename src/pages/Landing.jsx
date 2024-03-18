@@ -125,11 +125,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="container-fluid custom-background-color-antiquewhite mt-3">
-        <div className="bottom-0 text-center">
-          <FooterComponent />
-        </div>
-      </section>
+      <FooterComponent />
     </>
   );
 }

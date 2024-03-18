@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import { CaretRightFill, CaretDownFill } from "react-bootstrap-icons";
 
 // components
-import BrandComponent from "../components/common/BrandComponent";
-import AuthButtonComponent from "../components/common/AuthButtonComponent";
-import TrademarkComponent from "../components/common/TrademarkComponent";
+import BrandComponent from "../../components/common/BrandComponent";
+import AuthButtonComponent from "../../components/common/AuthButtonComponent";
+import TrademarkComponent from "../../components/common/TrademarkComponent";
 
 export default function SignIn() {
   const [showHelp, setShowHelp] = useState(false);

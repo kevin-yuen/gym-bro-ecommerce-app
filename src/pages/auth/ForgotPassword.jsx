@@ -1,9 +1,9 @@
 import React from "react";
 
 // components
-import BrandComponent from "../components/common/BrandComponent";
-import AuthButtonComponent from "../components/common/AuthButtonComponent";
-import TrademarkComponent from "../components/common/TrademarkComponent";
+import BrandComponent from "../../components/common/BrandComponent";
+import AuthButtonComponent from "../../components/common/AuthButtonComponent";
+import TrademarkComponent from "../../components/common/TrademarkComponent";
 
 export default function ForgotPasword() {
   return (

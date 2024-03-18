@@ -14,21 +14,21 @@ import RootLayout from "./layouts/RootLayout";
 
 // pages
 import Landing from "./pages/Landing";
-import SignIn from "./pages/SignIn";
-import CreateAccount from "./pages/CreateAccount";
-import ForgotPasword from "./pages/ForgotPassword";
-import ResetPassword from "./pages/ResetPassword";
+import SignIn from "./pages/auth/SignIn";
+import CreateAccount from "./pages/auth/CreateAccount";
+import ForgotPasword from "./pages/auth/ForgotPassword";
+import ResetPassword from "./pages/auth/ResetPassword";
 import NotFound from "./pages/NotFound";
-import AllProducts from "./pages/AllProducts";
-import WomenActivewear from "./pages/WomenActivewear";
-import MenActivewear from "./pages/MenActivewear";
-import Supplements from "./pages/Supplements";
+import AllProducts from "./pages/products/AllProducts";
+import WomenActivewear from "./pages/products/WomenActivewear";
+import MenActivewear from "./pages/products/MenActivewear";
+import Supplements from "./pages/products/Supplements";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Landing />}/>
+        <Route index element={<Landing />} />
         <Route path="/all-products" element={<AllProducts />} />
         <Route path="/women-activewear" element={<WomenActivewear />} />
         <Route path="/men-activewear" element={<MenActivewear />} />
