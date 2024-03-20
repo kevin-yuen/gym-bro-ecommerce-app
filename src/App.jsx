@@ -23,6 +23,7 @@ import AllProducts from "./pages/products/AllProducts";
 import WomenActivewear from "./pages/products/WomenActivewear";
 import MenActivewear from "./pages/products/MenActivewear";
 import Supplements from "./pages/products/Supplements";
+import AboutProduct from "./pages/products/AboutProduct";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path="/women-activewear" element={<WomenActivewear />} />
         <Route path="/men-activewear" element={<MenActivewear />} />
         <Route path="/supplements" element={<Supplements />} />
+        <Route path="/about-product" element={<AboutProduct />} />
       </Route>
 
       <Route path="/signin" element={<SignIn />} />

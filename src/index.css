@@ -61,6 +61,12 @@ input[type="text"]:focus {
   width: 100vw;
 }
 
+.btn-size:hover,
+.btn-size:focus {
+  background-color: var(--darkpurple);
+  color: var(--antiquewhite);
+}
+
 @media screen and (max-width: 937px) {
   div.navbar-functions,
   .oncanvas-nav-link-group {
