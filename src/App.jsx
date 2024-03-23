@@ -8,9 +8,11 @@ import {
 
 // context
 import LogoContextProvider from "./context/LogoContextProvider";
+import CheckoutContextProvider from "./context/CheckoutContextProvider";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
+import ShoppingBagLayout from "./layouts/ShoppingBagLayout";
 
 // pages
 import Landing from "./pages/Landing";
@@ -24,6 +26,11 @@ import WomenActivewear from "./pages/products/WomenActivewear";
 import MenActivewear from "./pages/products/MenActivewear";
 import Supplements from "./pages/products/Supplements";
 import AboutProduct from "./pages/products/AboutProduct";
+import BagDetails from "./pages/shoppingBag/BagDetails";
+import BuyerInformation from "./pages/shoppingBag/BuyerInformation";
+import ShippingInformation from "./pages/shoppingBag/ShippingInformation";
+import PaymentInformation from "./pages/shoppingBag/PaymentInformation";
+import CheckoutCompletion from "./pages/shoppingBag/CheckoutCompletion";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +42,14 @@ const router = createBrowserRouter(
         <Route path="/men-activewear" element={<MenActivewear />} />
         <Route path="/supplements" element={<Supplements />} />
         <Route path="/about-product" element={<AboutProduct />} />
+
+        <Route path="bag" element={<ShoppingBagLayout />}>
+          <Route index element={<BagDetails />} />
+          <Route path="information" element={<BuyerInformation />} />
+          <Route path="shipping" element={<ShippingInformation />} />
+          <Route path="payment" element={<PaymentInformation />} />
+          <Route path="checkout-complete" element={<CheckoutCompletion />} />
+        </Route>
       </Route>
 
       <Route path="/signin" element={<SignIn />} />
@@ -50,7 +65,9 @@ const router = createBrowserRouter(
 export default function App() {
   return (
     <LogoContextProvider>
-      <RouterProvider router={router} />;
+      <CheckoutContextProvider>
+        <RouterProvider router={router} />;
+      </CheckoutContextProvider>
     </LogoContextProvider>
   );
 }

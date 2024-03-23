@@ -67,6 +67,13 @@ input[type="text"]:focus {
   color: var(--antiquewhite);
 }
 
+.checkout-progress-border {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
 @media screen and (max-width: 937px) {
   div.navbar-functions,
   .oncanvas-nav-link-group {

@@ -4,18 +4,10 @@ import { StarFill } from "react-bootstrap-icons";
 // config
 import productBuyConfig from "../../config/productBuy.json";
 
-const createQuantityOptions = (quantity) => {
-  let qtyInStock = [];
-
-  for (let i = 2; i <= quantity; i++) {
-    qtyInStock.push(i);
-  }
-  return qtyInStock;
-};
+// components
+import QuantityDropdownComponent from "../common/QuantityDropdownComponent";
 
 const BuyComponent = () => {
-  const [selectedQtyAmount, setSelectedQtyAmount] = useState(1);
-
   return (
     <div className="border rounded-3 mt-3 pt-2">
       <div className="text-center">
@@ -25,8 +17,14 @@ const BuyComponent = () => {
       </div>
 
       <div className="d-flex justify-content-between ps-5 pe-5 fs-7">
-        <p><StarFill size={20} color="#3e0957" />4.6</p>
-        <p><span className="fw-bold custom-color-darkpurple">200+ bought</span> in past month</p>
+        <p>
+          <StarFill size={20} color="#3e0957" />
+          4.6
+        </p>
+        <p>
+          <span className="fw-bold custom-color-darkpurple">200+ bought</span>{" "}
+          in past month
+        </p>
         <p>36 ratings</p>
       </div>
 
@@ -50,30 +48,7 @@ const BuyComponent = () => {
         </div>
 
         <div className="mt-4">
-          <div className="dropdown">
-            <button
-              className="btn custom-background-color-antiquewhite dropdown-toggle pt-1 pb-1 fs-8"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Quantity: {selectedQtyAmount}
-            </button>
-            <ul className="dropdown-menu">
-              {createQuantityOptions(productBuyConfig.quantity).map(
-                (qtyAmount) => (
-                  <li>
-                    <button
-                      className="dropdown-item pt-1 pb-1 fs-8"
-                      type="button"
-                    >
-                      Quantity: {qtyAmount}
-                    </button>
-                  </li>
-                )
-              )}
-            </ul>
-          </div>
+          <QuantityDropdownComponent />
         </div>
 
         <div className="mt-4 text-center">
